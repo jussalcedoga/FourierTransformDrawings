@@ -9,7 +9,7 @@ let time = 0;
 let path = [];
 
 function setup() {
-	createCanvas(1200, 1000);
+	createCanvas(2500, 2000);
 	for (let i = 0; i<drawing.length; i++){
 		angle = map(i, 0, 100, 0, TWO_PI);
 		x[i] = drawing[i].x;

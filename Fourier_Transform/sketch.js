@@ -18,6 +18,8 @@ function setup() {
 
 	fourierX = dft(x);
 	fourierY = dft(y);
+  	fourierX.sort((a, b) => b.amp - a.amp);
+  	fourierY.sort((a, b) => b.amp - a.amp);
 }
 
 function epiCycles(x, y, rotation, fourier){
@@ -63,5 +65,10 @@ function draw() {
 	endShape();
 
 	const dt = TWO_PI / fourierY.length;
-	time -= dt;	
+	time += dt;	
+
+  if (time > TWO_PI + 0.05) {
+    time = 0;
+    path = [];
+  }
 }

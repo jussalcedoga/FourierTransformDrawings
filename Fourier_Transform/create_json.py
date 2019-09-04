@@ -4,6 +4,10 @@
 # https://www.mobilefish.com/services/record_mouse_coordinates/record_mouse_coordinates.php
 #collect the data file, and feed into this file. and you're drawing will be sketched!!
 
+# If you choose this way rather than the automatic arbitrary function finding
+# by the edge detection algorithm, you've got to store the clicks data into a 
+# file named "data". This will be sorted as you do clicks on the image.
+
 
 import pandas
 from matplotlib import pyplot

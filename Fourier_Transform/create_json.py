@@ -9,12 +9,11 @@
 # file named "data". This will be sorted as you do clicks on the image.
 
 
-import pandas
 from matplotlib import pyplot
 
 def main():
 	data = open("data", mode="r")
-	filename = "musical_note.js"
+	filename = "bunny.js"
 	outsample = open(filename, mode="w")
 	outsample.write("let drawing = [ \n")
 	for line in data:
